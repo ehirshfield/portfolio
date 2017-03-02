@@ -1,8 +1,16 @@
 
 
+section {
+	padding-top:70px;
+    padding-bottom:50px;
+    /*min-height:calc(100% - 1px);*/
+		height: 100vh;
+}
+
 footer {
   text-align: center;
-
+	opacity: 1;
+  background-color: rgba(0,0,0,1);
 }
 
 @media (min-width: 768px) {
@@ -15,4 +23,29 @@ footer {
     .navbar .navbar-collapse {
         text-align: center;
     }
+}
+
+.img-circle {
+    position: absolute;
+    left: 38%;
+    top: 10%;
+    border-radius: 50%;
+    height: 200px;
+}
+
+
+#topSection{
+	background: url('../img/cliff-1845955.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#section3 {
+	background: url('../img/los-angeles-1262207.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
