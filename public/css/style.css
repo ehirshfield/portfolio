@@ -1,4 +1,13 @@
+.navbar-static-top{
+  background:transparent;
+  background-image:none;
+  border-color:transparent;
+  box-shadow:none;
+}
 
+.name-title {
+	color: white;
+}
 
 section {
 	padding-top:70px;
@@ -27,10 +36,10 @@ footer {
 
 .img-circle {
     position: absolute;
-    left: 38%;
+    left: 70%;
     top: 10%;
     border-radius: 50%;
-    height: 200px;
+    height: 300px;
 }
 
 
@@ -48,4 +57,36 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.contact-form .form-control{
+	border:none;
+	box-shadow:none;
+	border-radius:0;
+	border-bottom: 1px solid #000;
+	transition: 1s ease;
+	font-weight: bold;
+	}
+	.contact-form .form-control:focus{
+	transition: 1s ease;
+	border-bottom: 1px solid #000;
+	}
+	.contact-main  .contact-main-title h2{
+	margin-top:0;
+	}
+
+.send-msg{
+color:#000;
+border:1px solid #000;
+height:40px;
+background-color:transparent;
+transition: all 0.8s ease-out;
+margin-top:10px;
+}
+
+.send-msg:hover{
+color:#fff;
+border:1px solid #fff;
+height:40px;
+background-color:#000;
 }
