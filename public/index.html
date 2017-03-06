@@ -9,30 +9,33 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
-
-      <!-- <nav class="navbar navbar-static-top navbar-toggleable-md navbar-light bg-faded">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#topSection">Eric Hirshfield-Yamanishi</a>
-          </div>
-          <div class="navbar-collapse collapse" id="navbar-collapsible">
-            <ul class="nav navbar-nav navbar-left">
-              <li><a href="#section1">About Me</a></li>
-              <li><a href="#section2">Portfolio</a></li>
-              <li><a href="#section3">Contact</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Brand</a> -->
         </div>
-      </nav> -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#topSection">Home</a></li>
+            <li><a href="#section1">About Me</a></li>
+            <li><a href="#section2">Portfolio</a></li>
+            <li><a href="#section3">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 
-    <section class="container-fluid" id="topSection">
+    <section class="container-fluid full-section" id="topSection">
 
 
     	<div class="container">
@@ -41,47 +44,94 @@
       <div class="name-title">
         <h2>Eric Hirshfield-Yamanishi</h2>
         <h4>Web Developer | UI/UX/JavaScript</h4>
+        <a href="https://www.linkedin.com/in/ehirshfield/">
+          <img class="logo-image" src="./img/linkedin.svg" />
+        </a>
+        <a href="https://github.com/ehirshfield">
+          <img class="logo-image" src="./img/github.svg" />
+        </a>
+        <a href="https://www.facebook.com/ehirshfield">
+          <img class="logo-image" src="./img/facebook.svg" />
+        </a>
       </div>
     </div><!--/container-->
   </section>
 
-  <section class="container-fluid" id="section1">
+  <section class="container-fluid full-section" id="section1">
     <div class="container">
       <div class="row">
-          <div class="col-sm-4">
-            <div class="row">
-              <div class="col-sm-10 col-sm-offset-2 text-center"><h3>Code</h3><p>There is other content and snippets of details or features that can be placed here..</p><i class="fa fa-cog fa-5x"></i></div>
-            </div>
+        <div class="col-sm-6">
+          <div class="about-img">
           </div>
-          <div class="col-sm-4 text-center">
-            <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 text-center"><h3>Care</h3><p>You may also want to create content that compells users to scroll down more..</p><i class="fa fa-user fa-5x"></i></div>
-            </div>
-          </div>
-          <div class="col-sm-4 text-center">
-            <div class="row">
-              <div class="col-sm-10 text-center"><h3>Coffee</h3><p>In the first 30 seconds of a user's visit to your site they decide if they're going to stay..</p><i class="fa fa-mobile fa-5x"></i></div>
-            </div>
-          </div>
+        </div>
+        <div class="col-sm-6 text-center about-page">
+          <h1>About Me</h1>
+          <br>
+          <h3 class="about-text">
+            I am a web developer who loves coffee, camping, and coding.
+          </h3>
+          <br>
+          <p class='about-text'>
+            I grew up in Northern New Jersey and graduated from UCLA in 2014. When I am not solving programming puzzles I can be found hiking the outskirts of LA, baking bread, and rock climbing.
+          </p>
+        </div>
       </div><!--/row-->
     <div class="row"><br></div>
     </div>
   </section>
 
-  <section class="container-fluid" id="section2">
-    <div class="row">
-    	<div class="col-sm-8 col-sm-offset-2 text-center">
-          <h1>What is Bootstrap?</h1>
-          <br>
-  		<p class="lead">Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. It is the No.1 project on GitHub with 65,000+ stars and 23,800 forks (as of March 2014) [1] and has been used by NASA and MSNBC, among many others..</p>
-          <br>
-        	<i style="font-size:120px" class="fa fa-camera fa-5x"></i>
-        	<p>Big 'ol Camera Icon</p>
-      </div>
+  <section class="container-fluid full-section" id="section2">
+    <div class="row text-center">
+      <h1>Portfolio</h1>
+    </div>
+    <div class="row form-group">
+      <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-image">
+                    <a href="https://polar-sea-42102.herokuapp.com/">
+                      <img src="./img/letshack.png" class="panel-image-preview" />
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <h4>letsHack</h4>
+                    <p>
+                      A collaborative coding app that pairs programmers together to solve problems. This is a JavaScript app that uses Node, Express, Sequelize, Handlebars, and Firebase.
+                       Here is a <a href="https://polar-sea-42102.herokuapp.com/">live version</a> and the <a href="https://github.com/ehirshfield/letsHack">github repo</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+              <div class="panel panel-default">
+                  <div class="panel-image">
+                      <img src="./img/chicken.jpg" class="panel-image-preview" />
+                  </div>
+                  <div class="panel-body">
+                      <h4>That's My Jam</h4>
+                      <p>
+                        An app that lets a user see their friends' restaurant reviews on a map, in order find nearby restaurants they'd like to try. Users can see their friends' Instagram food photos that were taken in that location
+                        by using #thatsmyjam. Here is a <a href="https://jesseharold.github.io/thatsmyjam/">live version</a> and the <a href="https://github.com/ehirshfield/project-1-friends-restaurant-review">github repo</a>.
+                      </p>
+                  </div>
+              </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+              <div class="panel panel-default">
+                  <div class="panel-image">
+                      <img src="./img/rps.png" class="panel-image-preview" />
+                  </div>
+                  <div class="panel-body">
+                      <h4>Rock, Paper, Scissors!</h4>
+                      <p>An online version of the classic Rock, Paper, Scissors game using Firebase. Players compete, wait in a queue, or chat with each other in this JQuery app.
+                        Here is a <a href="https://fathomless-bayou-74291.herokuapp.com/">live version</a> and the <a href="https://github.com/ehirshfield/rock-paper-scissors">github repo</a>.
+                      </p>
+                    </div>
+              </div>
+        </div>
     </div>
   </section>
 
-  <section class="container-fluid" id="section3">
+  <section class="container-fluid full-section" id="section3">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
@@ -111,7 +161,7 @@
                   <p>Message</p>
                   <textarea name="message" class="form-input-text form-control" rows="4" required="required"></textarea>
                 </div>
-                <div class="send-button bottom-margin">
+                <div class="send-button bottom-margin text-center">
                   <button type="submit" class="btn btn-send send-msg">SEND MESSAGE</button>
                 </div>
               </div>
